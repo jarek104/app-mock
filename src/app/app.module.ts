@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared.module';
 import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
     AppRoutingModule,
     MaterialModule,
     SharedModule,
-    SplitPaneModule
+    SplitPaneModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
