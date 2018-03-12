@@ -4,7 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-
+import { MaterialModule } from './material.module';
+import { SharedModule } from './shared.module';
+import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    SharedModule,
+    SplitPaneModule
   ],
   providers: [],
   bootstrap: [AppComponent]

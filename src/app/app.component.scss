@@ -1,0 +1,35 @@
+
+.bounds {
+  color:#f5f5f5 !important;
+  height :800px;
+
+  font-family: Roboto,Helvetica Neue,sans-serif;
+}
+.sec1 {
+  padding-top: 0 !important;
+  background: #009688;
+  margin: 5px;
+}
+
+.sec2 {
+  padding-top: 0 !important;
+  background: #f5f5f5;
+  margin: 5px 5px 5px 0;
+}
+
+.sec1, .sec2 {
+  padding-top:20px;
+  text-align:center
+}
+
+.content {
+  min-width: 300px;
+  /*height: 400px;*/
+}
+
+md-tabs {
+  color: #fff !important;
+}
+mat-toolbar {
+  height: 50px;
+}
