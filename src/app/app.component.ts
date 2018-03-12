@@ -11,20 +11,18 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 })
 export class AppComponent implements OnInit {
 
-  showDocumentTab$?: Observable<boolean>;
+  showTab$?: Observable<boolean>;
   test: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
   constructor(
     private observableMedia: ObservableMedia,
   ) {}
 
   ngOnInit() {
-    // this.test.next('true');
-    this.showDocumentTab$ = this.test.asObservable();
-    // this.showDocumentTab$ = this.observableMedia.asObservable().pipe(
-    //   map(mediaChange => {
-    //     return mediaChange.mqAlias === 'xs' ? 'true' : 'false';
-    //   }),
-    // );
+    this.showTab$ = this.observableMedia.asObservable().pipe(
+      map(mediaChange => {
+        return mediaChange.mqAlias === 'xs' ? true : false;
+      }),
+    );
   }
   onClickMe(val: boolean) {
     this.test.next(false);
