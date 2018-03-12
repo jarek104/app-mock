@@ -8,14 +8,14 @@
       <div fxFlex="75" class="primary" fxHide.xs>
         <mat-toolbar>Document</mat-toolbar>
         <div class="scroll">
-          <app-image-viewer></app-image-viewer>
+          <app-image-viewer fxFlex></app-image-viewer>
         </div>
 
       </div>
       <div fxFlex class="secondary" >
           <mat-tab-group mat-stretch-tabs>
             <mat-tab label="Document" *ngIf="showTab$ | async">
-              <app-image-viewer></app-image-viewer>
+              <app-image-viewer fxFlex></app-image-viewer>
             </mat-tab>
             <mat-tab label="Keywords">Keywords</mat-tab>
             <mat-tab label="Actions">Actions</mat-tab>

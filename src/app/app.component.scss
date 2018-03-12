@@ -1,14 +1,14 @@
 
 .bounds {
   color:#ddd !important;
-  height: 100%;
   font-family: Roboto,Helvetica Neue,sans-serif;
 }
 .primary {
   background: #009688;
+  height: 100%;
 }
 .scroll {
-  max-height:800px;
+  // max-height:800px;
   overflow:auto;
   // overflow-y: scroll;
 }
@@ -16,6 +16,7 @@
 .secondary {
   background: #f5f5f5;
   margin-left: 5px;
+
 }
 
 .sec1, .sec2 {
