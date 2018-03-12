@@ -5,11 +5,12 @@
        fxLayout.xs="column"
        fxFlexFill >
 
-      <div fxFlex="70" class="sec1" fxFlex.xs="50">
-        <mat-toolbar>Document name string goes here</mat-toolbar>
+      <div fxFlex="70" class="sec1" fxHide.xs>
+        <mat-toolbar>Document</mat-toolbar>
       </div>
-      <div fxFlex="30" class="sec2" >
+      <div fxFlex class="sec2" >
           <mat-tab-group>
+            <mat-tab label="Document" fxHide.sm fxHide.md fxHide.lg >Document</mat-tab>
             <mat-tab label="Keywords">Keywords</mat-tab>
             <mat-tab label="Actions">Actions</mat-tab>
             <!-- <mat-tab label="Notes">Notes</mat-tab>
