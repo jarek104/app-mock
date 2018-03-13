@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { KeywordsComponent } from './keywords/keywords.component';
 import { ActionsComponent } from './actions/actions.component';
 import { MatIconModule } from '@angular/material/icon';
+import { NotesComponent } from './notes/notes.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     AppComponent,
     ImageViewerComponent,
     KeywordsComponent,
-    ActionsComponent
+    ActionsComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
