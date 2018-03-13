@@ -4,9 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
 }
 
 html,
@@ -26,4 +23,25 @@ body {
 
 .mat-tab-header-pagination-chevron {
     padding: 0 !important;
+}
+
+.mat-toolbar {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.mat-card-title {
+    width: 100% !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+}
+
+.mat-card {
+    padding: 20px !important;
+}
+
+.md-32 {
+    font-size: 32px !important;
+    padding: 10px;
 }

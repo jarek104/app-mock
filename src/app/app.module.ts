@@ -14,13 +14,16 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { DogImagesService } from './dog-images.service';
 import { HttpClientModule } from '@angular/common/http';
 import { KeywordsComponent } from './keywords/keywords.component';
+import { ActionsComponent } from './actions/actions.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageViewerComponent,
-    KeywordsComponent
+    KeywordsComponent,
+    ActionsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { KeywordsComponent } from './keywords/keywords.component';
     SharedModule,
     SplitPaneModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [DogImagesService],
   bootstrap: [AppComponent]
