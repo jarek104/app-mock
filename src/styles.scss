@@ -1,15 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
-
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto,"Helvetica Neue",sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
 }
 
-html, body {
-  max-height: 100%;
+html,
+body {
+    max-height: 100%;
+}
+
+.mat-tab-label {
+    padding: 0 !important;
+    min-width: 120px !important;
+}
+
+.mat-tab-header-pagination {
+    padding: 0 !important;
+    min-width: 30px !important;
+}
+
+.mat-tab-header-pagination-chevron {
+    padding: 0 !important;
 }

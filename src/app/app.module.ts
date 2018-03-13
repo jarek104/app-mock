@@ -13,12 +13,14 @@ import { MaterialModule } from '../shared/material.module';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { DogImagesService } from './dog-images.service';
 import { HttpClientModule } from '@angular/common/http';
+import { KeywordsComponent } from './keywords/keywords.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageViewerComponent
+    ImageViewerComponent,
+    KeywordsComponent
   ],
   imports: [
     BrowserModule,
