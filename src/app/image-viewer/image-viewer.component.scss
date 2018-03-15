@@ -2,7 +2,8 @@ img {
     width: 100%;
 }
 
-.scroll {
+.viewer-container {
     overflow-y: scroll;
-    height: 92vh !important;
+    // fix this
+    height: 93vh !important;
 }

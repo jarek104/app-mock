@@ -1,6 +1,14 @@
-mat-card, mat-expansion-panel {
-  margin: 5px;
-}
 .delete {
-  color: #F44336 !important;
+    color: #F44336 !important;
+}
+
+.mat-card {
+    padding: 20px !important;
+    margin: 5px;
+}
+
+.mat-card-title {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
 }

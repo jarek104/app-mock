@@ -1,4 +1,4 @@
-.action-button {
+.action__button {
     margin: 3px !important;
     text-align: left;
     padding: 6px;
@@ -9,10 +9,16 @@
     width: auto;
 }
 
-.actions-header {
+.actions__header {
     text-align: center !important;
     padding: 10px;
     margin: 5px;
     font-size: 17px !important;
     font-weight: 400 !important;
+}
+
+.action__icon {
+    font-size: 20px !important;
+    padding: 10px;
+    color: #4352b3 !important
 }

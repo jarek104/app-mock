@@ -1,7 +1,7 @@
 <div fxLayout="row" fxLayout.xs="column" fxFlexFill>
 
-    <div fxFlex class="primary" fxHide.xs>
-        <mat-toolbar>Document</mat-toolbar>
+    <div fxFlex="70" class="primary" fxHide.xs fxLayout="column">
+        <mat-toolbar class="toolbar__font">Document</mat-toolbar>
         <!-- <div class="scroll"> -->
         <app-image-viewer></app-image-viewer>
         <!-- </div> -->
@@ -9,21 +9,19 @@
     </div>
     <div fxFlex="30" class="secondary">
         <mat-tab-group mat-stretch-tabs>
-            <div class="scroll">
-                <mat-tab label="Document" *ngIf="showTab$ | async">
-                    <app-image-viewer></app-image-viewer>
-                </mat-tab>
-                <mat-tab label="Keywords">
-                    <app-keywords></app-keywords>
-                </mat-tab>
-                <mat-tab label="Actions">
-                    <app-actions></app-actions>
-                </mat-tab>
-                <mat-tab label="Notes">
-                  <app-notes></app-notes>
-                </mat-tab>
-                <!-- <mat-tab label="History">History</mat-tab> -->
-            </div>
+            <mat-tab label="Document" *ngIf="showTab$ | async">
+                <app-image-viewer></app-image-viewer>
+            </mat-tab>
+            <mat-tab label="Keywords">
+                <app-keywords></app-keywords>
+            </mat-tab>
+            <mat-tab label="Actions">
+                <app-actions></app-actions>
+            </mat-tab>
+            <mat-tab label="Notes">
+                <app-notes></app-notes>
+            </mat-tab>
+            <!-- <mat-tab label="History">History</mat-tab> -->
         </mat-tab-group>
     </div>
 
