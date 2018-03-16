@@ -1,7 +1,7 @@
 .action__button {
-    margin: 3px !important;
+    margin: 3px 8px 3px 8px !important;
     text-align: left;
-    padding: 6px;
+    padding: 6px 6px 6px 12px;
     font-weight: 400 !important;
 }
 
@@ -20,5 +20,22 @@
 .action__icon {
     font-size: 20px !important;
     padding: 10px;
-    color: #4352b3 !important
+    color: #ffffff !important
+}
+
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #4352b3;
+    display: flex;
+}
+
+.mat-button-wrapper {
+    display: flex;
+}
+
+.button-text__padding {
+    padding-left: 10px;
+    padding-top: 4px;
 }
