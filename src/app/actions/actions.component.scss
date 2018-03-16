@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .action__button {
     margin: 3px !important;
     text-align: left;
@@ -20,5 +22,5 @@
 .action__icon {
     font-size: 20px !important;
     padding: 10px;
-    color: #4352b3 !important
+    color: $action-icon-color !important
 }

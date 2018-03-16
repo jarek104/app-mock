@@ -1,3 +1,5 @@
+@import '../styles.scss';
+
 .primary {
     margin-right: 4px;
 }
@@ -13,5 +15,7 @@
 
 mat-toolbar {
     height: 48px;
-    border-bottom: 2px solid #4352b3 !important;
+    border-bottom: 2px solid $toolbar-border-color !important;
+    background: $toolbar-background-color !important;
 }
+// teal 2b9788 light blue 36abf2

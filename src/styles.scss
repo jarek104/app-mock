@@ -6,10 +6,53 @@
     padding: 0;
 }
 
+@import '~@angular/material/theming';
+@include mat-core();
+
+$custom-theme-primary: mat-palette($mat-teal);
+$custom-theme-accent: mat-palette($mat-cyan);
+$custom-theme-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme(
+  $custom-theme-primary,
+  $custom-theme-accent,
+  $custom-theme-warn
+);
+
+$custom-second-theme-primary: mat-palette($mat-purple);
+$custom-second-theme-accent: mat-palette($mat-pink);
+$custom-second-theme-warn: mat-palette($mat-red);
+
+$my-second-theme: mat-dark-theme(
+  $custom-second-theme-primary,
+  $custom-second-theme-accent,
+  $custom-second-theme-warn
+);
+
+$toolbar-border-color: #2b9788;
+$toolbar-background-color: #ffffff;
+$action-icon-color: #2b9788;
+
+
+@include angular-material-theme($my-theme);
+
+.lighter-theme {
+
+}
+.darker-theme {
+  @include angular-material-theme($my-second-theme);
+}
+
+
+
+
+
+
+
 html,
 body {
     max-height: 100vh;
-    background: #f5f5f5;
+    background: #fff;
 }
 
 .mat-tab-label {
