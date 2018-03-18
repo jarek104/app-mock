@@ -26,6 +26,7 @@ mat-toolbar {
     }
 }
 
+// removes the click-background-change
 ::ng-deep .mat-tab-label:focus {
     background: $toolbar-background-color !important;
     font-weight: 500 !important;
