@@ -9,28 +9,28 @@
     </div>
     <!-- Magic [label]="(showTab$ | async) ? 'true' : 'false'"  -->
     <div fxFlex="30" class="secondary">
-        <mat-tab-group mat-stretch-tabs>
-            <mat-tab *ngIf="showTab$ | async">
+        <mat-tab-group mat-stretch-tabs [disableRipple]="showTab$ | async">
+            <mat-tab *ngIf="showTab$ | async" class="no-hover">
                 <ng-template mat-tab-label>
                     <mat-icon>description</mat-icon>
                 </ng-template>
 
                 <app-image-viewer></app-image-viewer>
             </mat-tab>
-            <mat-tab [label]="(showTab$ | async) ? '' : 'Keywords'">
+            <mat-tab [label]="(showTab$ | async) ? '' : 'Keywords'" class="no-hover">
                 <ng-template mat-tab-label *ngIf="showTab$ | async">
                     <mat-icon class="icon__rotate">vpn_key</mat-icon>
                 </ng-template>
 
                 <app-keywords></app-keywords>
             </mat-tab>
-            <mat-tab [label]="(showTab$ | async) ? '' : 'Actions'">
+            <mat-tab [label]="(showTab$ | async) ? '' : 'Actions'" class="no-hover">
                 <ng-template mat-tab-label *ngIf="showTab$ | async">
                     <mat-icon>flash_on</mat-icon>
                 </ng-template>
                 <app-actions></app-actions>
             </mat-tab>
-            <mat-tab [label]="(showTab$ | async) ? '' : 'Notes'">
+            <mat-tab [label]="(showTab$ | async) ? '' : 'Notes'" class="no-hover">
                 <ng-template mat-tab-label *ngIf="showTab$ | async">
                     <mat-icon class="icon__shrink">note</mat-icon>
                 </ng-template>
