@@ -1,5 +1,4 @@
 @import '../styles.scss';
-
 .primary {
     margin-right: 4px;
 }
@@ -18,4 +17,20 @@ mat-toolbar {
     border-bottom: 2px solid $toolbar-border-color !important;
     background: $toolbar-background-color !important;
 }
+
 // teal 2b9788 light blue 36abf2
+.icon__rotate {
+    // -webkit-transform: rotate(135deg);
+    // -moz-transform: rotate(135deg);
+    // -o-transform: rotate(135deg);
+    // -ms-transform: rotate(135deg);
+    // -moz-transform: scale(-1, 1);
+    // -webkit-transform: scale(-1, 1);
+    // -o-transform: scale(-1, 1);
+    // -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1) rotate(90deg);
+}
+
+.icon__shrink {
+    transform: scale(0.85, 1);
+}

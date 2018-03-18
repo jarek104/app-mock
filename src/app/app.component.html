@@ -7,18 +7,33 @@
         <!-- </div> -->
 
     </div>
+    <!-- Magic [label]="(showTab$ | async) ? 'true' : 'false'"  -->
     <div fxFlex="30" class="secondary">
         <mat-tab-group mat-stretch-tabs>
-            <mat-tab label="Document" *ngIf="showTab$ | async">
+            <mat-tab *ngIf="showTab$ | async">
+                <ng-template mat-tab-label>
+                    <mat-icon>description</mat-icon>
+                </ng-template>
+
                 <app-image-viewer></app-image-viewer>
             </mat-tab>
-            <mat-tab label="Keywords">
+            <mat-tab [label]="(showTab$ | async) ? '' : 'Keywords'">
+                <ng-template mat-tab-label *ngIf="showTab$ | async">
+                    <mat-icon class="icon__rotate">vpn_key</mat-icon>
+                </ng-template>
+
                 <app-keywords></app-keywords>
             </mat-tab>
-            <mat-tab label="Actions">
+            <mat-tab [label]="(showTab$ | async) ? '' : 'Actions'">
+                <ng-template mat-tab-label *ngIf="showTab$ | async">
+                    <mat-icon>flash_on</mat-icon>
+                </ng-template>
                 <app-actions></app-actions>
             </mat-tab>
-            <mat-tab label="Notes">
+            <mat-tab [label]="(showTab$ | async) ? '' : 'Notes'">
+                <ng-template mat-tab-label *ngIf="showTab$ | async">
+                    <mat-icon class="icon__shrink">note</mat-icon>
+                </ng-template>
                 <app-notes></app-notes>
             </mat-tab>
             <!-- <mat-tab label="History">History</mat-tab> -->
