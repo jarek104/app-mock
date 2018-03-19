@@ -29,15 +29,15 @@ $my-second-theme: mat-dark-theme(
   $custom-second-theme-warn
 );
 
-$toolbar-border-color: #2b9788;
+$toolbar-border-color: #4352b3;
 $toolbar-background-color: #ffffff;
-$action-icon-color: #2b9788;
+$action-icon-color: #4352b3;
 
 
-@include angular-material-theme($my-theme);
+
 
 .lighter-theme {
-
+  @include angular-material-theme($my-theme);
 }
 .darker-theme {
   @include angular-material-theme($my-second-theme);
