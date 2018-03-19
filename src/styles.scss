@@ -8,17 +8,10 @@
 
 @import '~@angular/material/theming';
 @include mat-core();
-
 $custom-theme-primary: mat-palette($mat-teal);
 $custom-theme-accent: mat-palette($mat-cyan);
 $custom-theme-warn: mat-palette($mat-red);
-
-$my-theme: mat-light-theme(
-  $custom-theme-primary,
-  $custom-theme-accent,
-  $custom-theme-warn
-);
-
+$my-theme: mat-light-theme( $custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
 $custom-second-theme-primary: mat-palette($mat-purple);
 $custom-second-theme-accent: mat-palette($mat-pink);
 $custom-second-theme-warn: mat-palette($mat-red);
@@ -40,14 +33,8 @@ $action-icon-color: #4352b3;
   @include angular-material-theme($my-theme);
 }
 .darker-theme {
-  @include angular-material-theme($my-second-theme);
+    @include angular-material-theme($my-second-theme);
 }
-
-
-
-
-
-
 
 html,
 body {
@@ -57,7 +44,7 @@ body {
 
 .mat-tab-label {
     padding: 0 !important;
-    min-width: 120px !important;
+    min-width: 80px !important;
 }
 
 .mat-tab-header-pagination {
