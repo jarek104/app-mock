@@ -1,22 +1,93 @@
-<div class="actions__header">Workflow Actions</div>
 <div class="action-buttons-container" fxLayout="column">
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">thumb_up</i>Approve</button>
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">thumb_down</i>Reject</button>
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">call_made</i>Send for review</button>
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">camera_alt</i>Request more pictures</button>
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">local_hospital</i>Request medical report</button>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">thumb_up</i>
+                </button>
+            </div>
+            <mat-card-title>Approve</mat-card-title>
+            <mat-card-subtitle>Approve X and remove from workflow</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">thumb_down</i>
+                </button>
+            </div>
+            <mat-card-title>Reject</mat-card-title>
+            <mat-card-subtitle>Reject X</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">call_made</i>
+                </button>
+            </div>
+            <mat-card-title>Send for review</mat-card-title>
+            <mat-card-subtitle>Send this document to manager for review</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">camera_alt</i>
+                </button>
+            </div>
+            <mat-card-title>Request more pictures</mat-card-title>
+            <mat-card-subtitle>Send an email to X requesting more images.</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">local_hospital</i>
+                </button>
+            </div>
+            <mat-card-title>Request medical report</mat-card-title>
+            <mat-card-subtitle>Send an email requesting medical record</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
 </div>
-<div class="actions__header">Document Actions</div>
+<mat-divider style="margin:10px;"></mat-divider>
 <div class="action-buttons-container" fxLayout="column">
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">save</i>Save</button>
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">print</i>Print</button>
-    <button mat-raised-button class="action__button">
-      <i class="material-icons action__icon">email</i>Send via email</button>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">save</i>
+                </button>
+            </div>
+            <mat-card-title>Save</mat-card-title>
+            <mat-card-subtitle>Save a copy of this document locally</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">print</i>
+                </button>
+            </div>
+            <mat-card-title>Print</mat-card-title>
+            <mat-card-subtitle>Print using local printer</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar>
+                <button mat-mini-fab color="primary" class="mat-elevation-z0">
+                    <i class="material-icons">email</i>
+                </button>
+            </div>
+            <mat-card-title>Email</mat-card-title>
+            <mat-card-subtitle>Attach this document to an email</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
 </div>

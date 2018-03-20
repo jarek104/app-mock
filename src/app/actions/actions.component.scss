@@ -19,7 +19,24 @@
 }
 
 .action__icon {
-    font-size: 20px !important;
+    font-size: 30px !important;
     padding: 10px;
     color: $action-icon-color !important
+}
+
+mat-card {
+    padding: 10px !important;
+    margin: 3px;
+}
+
+mat-card-subtitle {
+    margin-bottom: 6px;
+}
+
+mat-card-header {
+    margin-top: 6px !important;
+}
+
+mat-card {
+    cursor: pointer;
 }
