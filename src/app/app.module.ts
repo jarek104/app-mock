@@ -37,7 +37,7 @@ import { NotesComponent } from './notes/notes.component';
     HttpClientModule,
     MatIconModule
   ],
-  providers: [DogImagesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
